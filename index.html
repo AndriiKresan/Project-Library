@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>Your Library</h1>
+    <p>Manage your books here</p>
+  </header>
+  <main>
+    <section id="leftSide">
+      <div class="tabs">
+        <div>Title</div>
+        <div class="line"></div>
+        <div>Author</div>
+        <div class="line"></div>
+        <div>Pages</div>
+        <div class="line"></div>
+        <div>Complete</div>
+      </div>
+    </section>
+
+    <section id="rightSide">
+      <h1>Add new Books</h1>
+      <div>
+        <label for="name">Title</label>
+        <input id="inputName" type="text" name="name">
+      </div>
+      <div>
+        <label for="author">Author</label>
+        <input id="inputAuthor" type="text" name="author">
+      </div>
+      <div>
+        <label for="numberOfPages">Number of pages</label>
+        <input id="inputPages" type="number" name="numberOfPages">
+      </div>
+      <div>
+        <label for="read">Have you read it?</label>
+      <input id="inputRead" type="checkbox" name="read">
+      </div>
+      <button id="submitButton" type="button">Submit</button>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
