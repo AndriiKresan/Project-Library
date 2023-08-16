@@ -1,3 +1,12 @@
+class Book {
+  constructor(name, author, pages, read) {
+    this.name = name;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+  }
+}
+
 let myLibrary = [
   new Book("Later", "Steven King", 293, "Read"),
   new Book("American psycho", "Bred Iston Ellis", 342, "Not Read"),
@@ -5,12 +14,6 @@ let myLibrary = [
 const container = document.querySelector("#leftSide");
 const submitButton = document.querySelector("#submitButton");
 
-function Book(name, author, pages, read) {
-  this.name = name;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
-}
 
 function createBookElement(book) {
   const bookElement = document.createElement("div");
